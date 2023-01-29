@@ -9,6 +9,7 @@ class Observer {
         console.log(`Now Dialling ${this.phoneNumber}`);
     }
     update(context) {
+        // check for only phone numbers that have been added can be dialled
         if (context === this.phoneNumber) {
             this.printPhoneNumber();
             this.showNumberDialling();
@@ -60,8 +61,8 @@ class Telephone {
 
 const telephoneApp = new Telephone();
 
-telephoneApp.AddPhoneNumber(33333);
-telephoneApp.AddPhoneNumber(111111);
-telephoneApp.RemovePhoneNumber(222222);
+telephoneApp.AddPhoneNumber(234911619);
+telephoneApp.AddPhoneNumber(2345678854);
+telephoneApp.RemovePhoneNumber(41941941);
 telephoneApp.AddPhoneNumber(2347023232);
 telephoneApp.DialPhoneNumber(2347023232);
